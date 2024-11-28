@@ -1,0 +1,29 @@
+.right{
+    overflow-x: auto;
+}
+.news-container{
+    animation: move 3s 1 linear;
+}
+.right::-webkit-scrollbar{
+    display: none;
+}
+.right div li{
+    list-style: circle;
+    transition: all linear 0.2s;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.308);
+    cursor: pointer;
+}
+.right div li:hover{
+    margin-left: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.377);
+    /* background-color: rgb(233, 227, 227); */
+}
+
+@keyframes move {
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}

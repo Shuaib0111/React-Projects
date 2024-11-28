@@ -1,0 +1,14 @@
+.left{
+    overflow: auto;
+}
+.left::-webkit-scrollbar{
+    display: none;
+}
+button{
+    transition: all 0.2s linear;
+}
+button:hover{
+    background-color: rgba(0, 0, 255, 0.767);
+    color: white;
+    outline: none;
+}
